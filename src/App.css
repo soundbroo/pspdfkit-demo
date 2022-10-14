@@ -1,0 +1,154 @@
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  background: #f0f3f9;
+  padding: 6px 12px;
+  border: 1px solid #cecece;
+  border-radius: 6px;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-light {
+  color: #fff;
+  border: none;
+}
+
+.button-cancel, .button-save {
+  color: #fff;
+  border: none;
+  width: min-content;
+}
+
+.button-cancel {
+  background-color: #d02b4c;
+}
+
+.button-save {
+  background-color: #1976D3;
+}
+
+.signature-list {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 0 12px;
+  min-width: 210px;
+  height: 100%;
+}
+
+.signature-list__header {
+  line-height: 44px;
+}
+
+.signature-list__content {
+  height: 100%;
+}
+
+.signature-list__footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+
+.signature-list__footer .button {
+  width: 110px;
+}
+
+.signature-list__content > .signature-field:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.signature-field {
+  width: 100%;
+  height: 32px;
+  cursor: grab;
+}
+
+.user-select {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.user-select_column {
+  flex-direction: column;
+}
+
+.user-select select {
+  height: 36px;
+  width: 100%;
+}
+
+.pdf-instance-container {
+  position: relative;
+  width: 100%;
+}
+
+.pdf-instance {
+  width: 100%;
+  height: 100vh;
+}
+
+.pdf-instance_events-disabled {
+  pointer-events: none;
+}
+
+.signature-modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+  border: 1px solid #cecece;
+  box-shadow: 0px 0px 10px 5px #0000002b;
+  border-radius: 6px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+
+.signature-modal__method-select {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #cecece;
+}
+
+.signature-modal__input-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.signature-modal__stored-signatures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.signature-modal__stored-signatures img {
+  width: 200px;
+}
+
+.signature-modal__footer {
+  display: flex;
+  padding: 6px;
+}
+
+.signature-modal__footer > button:not(:last-child) {
+  margin-right: 12px;
+}
+
+#ink-canvas {
+  background: #fff;
+}
